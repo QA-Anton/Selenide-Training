@@ -13,11 +13,23 @@ public class User {
 
     }
 
-    String name;
-    int age;
 
-    void sayHello() {
-        System.out.println("Привет, меня зовут " + name + ", " + "мне " +  age + " лет");
+
+    // Делаем поля приватными, чтобы их нельзя было испортить снаружи
+    private String name;
+    private int age;
+
+   public void sayHello() {
+       System.out.println("Привет, меня зовут " + name + ", " + "мне " +  age + " лет");
+    }
+
+    // Метод для "безопасной записи" данных
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
     }
 }
 
