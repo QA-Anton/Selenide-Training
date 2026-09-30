@@ -4,6 +4,7 @@ public class Tester {
 
     private String name;
     private boolean isManual;
+    private static int count = 0;
 
     public void setName(String name) {
         this.name = name;
